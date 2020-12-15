@@ -1,0 +1,250 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Server\\BlazorPeliculas.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Client\\BlazorPeliculas.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Client\\BlazorPeliculas.Client.csproj",
+        "projectName": "BlazorPeliculas.Client",
+        "projectPath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Client\\BlazorPeliculas.Client.csproj",
+        "packagesPath": "C:\\Users\\pleon\\.nuget\\packages\\",
+        "outputPath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pleon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Shared\\BlazorPeliculas.Shared.csproj": {
+                "projectPath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Shared\\BlazorPeliculas.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Markdig": {
+              "target": "Package",
+              "version": "[0.22.1, )"
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[4.12.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Server\\BlazorPeliculas.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Server\\BlazorPeliculas.Server.csproj",
+        "projectName": "BlazorPeliculas.Server",
+        "projectPath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Server\\BlazorPeliculas.Server.csproj",
+        "packagesPath": "C:\\Users\\pleon\\.nuget\\packages\\",
+        "outputPath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pleon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Client\\BlazorPeliculas.Client.csproj": {
+                "projectPath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Client\\BlazorPeliculas.Client.csproj"
+              },
+              "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Shared\\BlazorPeliculas.Shared.csproj": {
+                "projectPath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Shared\\BlazorPeliculas.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.7.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Shared\\BlazorPeliculas.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Shared\\BlazorPeliculas.Shared.csproj",
+        "projectName": "BlazorPeliculas.Shared",
+        "projectPath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Shared\\BlazorPeliculas.Shared.csproj",
+        "packagesPath": "C:\\Users\\pleon\\.nuget\\packages\\",
+        "outputPath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pleon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
