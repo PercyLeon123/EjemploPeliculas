@@ -51,7 +51,7 @@ namespace BlazorPeliculas.Server.Helpers
 
             string rutaGuardado = Path.Combine(folder, filename);
             await File.WriteAllBytesAsync(rutaGuardado, contenido);
-
+            /* Devolvemos la ruta */
             var urlActual = $"{HttpContextAccessor.HttpContext.Request.Scheme}://{HttpContextAccessor.HttpContext.Request.Host}";
             var rutaParaDB = Path.Combine(urlActual, nombreContenedor, filename);
             return rutaParaDB;

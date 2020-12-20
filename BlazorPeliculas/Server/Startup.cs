@@ -27,8 +27,8 @@ namespace BlazorPeliculas.Server
             services.AddDbContext<ApplicationDbContext>(option =>
                 option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            //services.AddScoped<IAlmacenadorArchivos, AlmacenadorArchivosAzStorage>();
-            services.AddScoped<IAlmacenadorArchivos, AlmacenadorArchivosLocal>();
+            services.AddScoped<IAlmacenadorArchivos, AlmacenadorArchivosAzStorage>();
+            //services.AddScoped<IAlmacenadorArchivos, AlmacenadorArchivosLocal>();
             services.AddHttpContextAccessor();
 
             services.AddControllersWithViews();
