@@ -30,6 +30,7 @@ namespace BlazorPeliculas.Server.Controllers
                 var fotoPersona = Convert.FromBase64String(persona.Foto);
                 persona.Foto = await AlmacenadorArchivos.GuardarArchivo(fotoPersona, ".jpg", Contenedor);
             }
+
             Context.Add(persona);
             await Context.SaveChangesAsync();
             return persona.Id;
