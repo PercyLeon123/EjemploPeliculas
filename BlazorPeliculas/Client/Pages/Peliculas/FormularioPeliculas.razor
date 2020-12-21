@@ -1,5 +1,5 @@
 ﻿
-    <EditForm Model="Pelicula" OnValidSubmit="OnValidSubmit">
+    <EditForm Model="Pelicula" OnValidSubmit="OnDataAnnonationsValidated">
         <DataAnnotationsValidator />
         <div class="form-group">
             <label>Título:</label>
@@ -51,7 +51,7 @@
                                            SearchMethod="BuscarActores" 
                                            ElementosSeleccionados="ActoresSeleccionados">
                     <MyListTemplate>
-                        @persona.Nombre
+                        @persona.Nombre  / <input type="text" placeholder="Personajes" @bind="persona.Personaje" />
                     </MyListTemplate>
                     <MyResultTemplate>
                         <img style="width: 50px" src="@persona.Foto" />
@@ -99,4 +99,22 @@
             new Persona(){Id=2, Nombre="Tom Hanks", Foto = "https://m.media-amazon.com/images/M/MV5BMTQ2MjMwNDA3Nl5BMl5BanBnXkFtZTcwMTA2NDY3NQ@@._V1_UY317_CR2,0,214,317_AL_.jpg"}
         };
     }
+
+    private async Task OnDataAnnonationsValidated()
+    {
+        Pelicula.GenerosPelicula = Seleccionados
+            .Select(x => new GeneroPelicula { GeneroId = int.Parse(x.Llave) }).ToList();
+
+        Pelicula.PeliculasActor = ActoresSeleccionados
+            .Select(x => new PeliculaActor { PeliculaId = x.Id, Personaje = x.Personaje }).ToList();
+
+        if (!string.IsNullOrWhiteSpace(Pelicula.Poster)) 
+        {
+            posterTemporal = null;
+        }
+
+        await OnValidSubmit.InvokeAsync(null);
+
+    }
+
 }

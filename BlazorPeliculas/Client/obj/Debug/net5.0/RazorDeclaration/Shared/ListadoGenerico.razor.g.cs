@@ -118,11 +118,12 @@ using Microsoft.AspNetCore.Components.WebAssembly.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Aplicaciones\net Core\BlazorPeliculas-6\BlazorPeliculas\Client\Shared\ListadoGenerico.razor"
+#line 40 "C:\Aplicaciones\net Core\BlazorPeliculas-6\BlazorPeliculas\Client\Shared\ListadoGenerico.razor"
        
     [Parameter] public RenderFragment Cargando { get; set; }
     [Parameter] public RenderFragment NoHayRegistros { get; set; }
     [Parameter] public RenderFragment<Titem> HayRegistros { get; set; }
+    [Parameter] public RenderFragment HayRegistrosCompleto { get; set; }
     [Parameter] public List<Titem> Listado { get; set; }
 
 #line default

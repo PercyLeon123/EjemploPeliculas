@@ -155,6 +155,24 @@ using Microsoft.AspNetCore.Components.WebAssembly.Services;
         };
     }
 
+    private async Task OnDataAnnonationsValidated()
+    {
+        Pelicula.GenerosPelicula = Seleccionados
+            .Select(x => new GeneroPelicula { GeneroId = int.Parse(x.Llave) }).ToList();
+
+        Pelicula.PeliculasActor = ActoresSeleccionados
+            .Select(x => new PeliculaActor { PeliculaId = x.Id, Personaje = x.Personaje }).ToList();
+
+        if (!string.IsNullOrWhiteSpace(Pelicula.Poster)) 
+        {
+            posterTemporal = null;
+        }
+
+        await OnValidSubmit.InvokeAsync(null);
+
+    }
+
+
 #line default
 #line hidden
 #nullable disable

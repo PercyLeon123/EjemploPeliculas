@@ -119,7 +119,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Aplicaciones\net Core\BlazorPeliculas-6\BlazorPeliculas\Client\Pages\Peliculas\CrearPelicula.razor"
+#line 11 "C:\Aplicaciones\net Core\BlazorPeliculas-6\BlazorPeliculas\Client\Pages\Peliculas\CrearPelicula.razor"
        
     private Pelicula Pelicula = new Pelicula();
     private List<Genero> GenerosNoSeleccionados = new List<Genero>();
@@ -135,16 +135,28 @@ using Microsoft.AspNetCore.Components.WebAssembly.Services;
         };
     }
 
-    void Crear()
+    async Task Crear()
     {
-        Console.WriteLine(navigationManager.Uri);
-        navigationManager.NavigateTo("pelicula");
+        var httpResponse = await repositorio.Post<Pelicula, int>("api/peliculas", Pelicula);
+
+        if (httpResponse.Error)
+        {
+            var mensajeError = await httpResponse.GetBody();
+            await mostrarMensajes.MostrarMensajeError(mensajeError);
+        }
+        else
+        {
+            var PeliculaId = httpResponse.Response;
+            navigationManager.NavigateTo($"/pelicula/{PeliculaId}/{Pelicula.Titulo.Replace(" ","-")}");
+        }
     }
 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IMostrarMensajes mostrarMensajes { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRepositorio repositorio { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }
 }

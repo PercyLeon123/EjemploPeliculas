@@ -118,6 +118,22 @@ using Microsoft.AspNetCore.Components.WebAssembly.Services;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 34 "C:\Aplicaciones\net Core\BlazorPeliculas-6\BlazorPeliculas\Client\Pages\Generos\IndiceGeneros.razor"
+       
+
+    public List<Genero> Generos { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var responseHttp = await repositorio.GET<List<Genero>>("api/generos");
+        Generos = responseHttp.Response;
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRepositorio repositorio { get; set; }
     }
 }
 #pragma warning restore 1591
