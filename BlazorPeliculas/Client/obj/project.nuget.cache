@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aTjvivUXlPso+N3UX9S/bo8Omhom9GxWxoW3COOJn7FSm0IRXOAf1Y2agJT/q63uESRN56x2wRdwya9wuffg7g==",
+  "dgSpecHash": "W5JzwZ56allMaTMeGBRCnXauBV9d52HG7xS5K3pTwFRQTu9pBEyJJ34qtfqXMpcB2mIMz4pO1cvEEqs0+Hcjwg==",
   "success": true,
   "projectFilePath": "C:\\Aplicaciones\\net Core\\BlazorPeliculas-6\\BlazorPeliculas\\Client\\BlazorPeliculas.Client.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,7 @@
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.0\\microsoft.jsinterop.webassembly.5.0.0.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
-    "C:\\Users\\pleon\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.0\\microsoft.netcore.app.runtime.browser-wasm.5.0.0.nupkg.sha512"
+    "C:\\Users\\pleon\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.1\\microsoft.netcore.app.runtime.browser-wasm.5.0.1.nupkg.sha512"
   ],
   "logs": []
 }
